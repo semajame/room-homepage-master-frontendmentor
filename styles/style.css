@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+body {
+  font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body .container .main-content {
+  display: flex;
+}
+body .container .main-content .left-content {
+  display: flex;
+}
+body .container .main-content .left-content .left-background {
+  position: relative;
+  overflow: hidden;
+}
+body .container .main-content .left-content .left-background .slider {
+  transition: transform 0.3s ease;
+  display: flex;
+}
+body .container .main-content .left-content header {
+  padding: 3rem 0 0 3rem;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+body .container .main-content .left-content header ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+body .container .main-content .left-content header li {
+  list-style: none;
+}
+body .container .main-content .left-content header a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  padding: 0 1rem;
+}
+body .container .main-content .right-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+body .container .main-content .right-content .right-content-container {
+  padding: 4rem 5rem 0 5rem;
+}
+body .container .main-content .right-content .right-content-container .right-content-content .header {
+  display: none;
+}
+body .container .main-content .right-content .right-content-container .right-content-content .header.active {
+  font-size: 2.7rem;
+  line-height: 3rem;
+  letter-spacing: -1px;
+  font-weight: 600;
+  width: 400px;
+  display: block;
+}
+body .container .main-content .right-content .right-content-container .right-content-content .paragraph {
+  display: none;
+}
+body .container .main-content .right-content .right-content-container .right-content-content .paragraph.active {
+  margin-top: 2rem;
+  color: #a1a1a1;
+  display: block;
+}
+body .container .main-content .right-content .right-content-container .shop-link {
+  margin: 2rem 0 4rem 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: hsl(0, 0%, 0%);
+}
+body .container .main-content .right-content .right-content-container .shop-link a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  color: hsl(0, 0%, 0%);
+  transition: 300ms ease;
+}
+body .container .main-content .right-content .right-content-container .shop-link img {
+  padding-left: 1rem;
+  transition: 300ms ease;
+}
+body .container .main-content .right-content .right-content-container .shop-link:hover a {
+  color: #a1a1a1;
+}
+body .container .main-content .right-content .right-content-container .shop-link:hover img {
+  filter: invert(72%) sepia(0%) saturate(5250%) hue-rotate(156deg) brightness(88%) contrast(95%);
+}
+body .container .main-content .right-content .arrow-container {
+  display: flex;
+}
+body .container .main-content .right-content .arrow-container img {
+  background-color: hsl(0, 0%, 0%);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+body .container .main-content .right-content .arrow-container img:hover {
+  opacity: 70%;
+  transition: 300ms ease;
+}
+body .container .bottom-content {
+  display: flex;
+}
+body .container .bottom-content .first-pic {
+  background: url(/images/image-about-dark.jpg) no-repeat center;
+  width: 100%;
+}
+body .container .bottom-content .second-content {
+  padding: 4rem 2rem 2rem 2rem;
+}
+body .container .bottom-content .second-content h2 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+body .container .bottom-content .second-content p {
+  color: #a1a1a1;
+}
+body .container .bottom-content .third-pic {
+  width: 100%;
+  background: url(/images/image-about-light.jpg) no-repeat center;
+}
+body .container .bottom-background {
+  height: 1.9rem;
+  background-color: hsl(0, 0%, 0%);
+}/*# sourceMappingURL=style.css.map */
