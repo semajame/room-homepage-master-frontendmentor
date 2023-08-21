@@ -2,6 +2,8 @@
 body {
   font-family: "League Spartan", sans-serif;
   min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 body .container .main-content {
   display: flex;
@@ -12,7 +14,7 @@ body .container .main-content .left-content {
 body .container .main-content .left-content .left-background {
   position: relative;
   overflow: hidden;
-  width: 800px;
+  max-width: 840px;
 }
 body .container .main-content .left-content .left-background .slider {
   transition: transform 0.3s ease;
@@ -151,6 +153,9 @@ body .container .bottom-content .third-pic {
   }
   body .container .main-content .left-content .arrow-container {
     display: none;
+  }
+  body .container .main-content .left-content .left-background {
+    max-width: none;
   }
   body .container .main-content .left-content .left-background .arrow-container-mobile {
     display: flex;

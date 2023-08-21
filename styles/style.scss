@@ -9,7 +9,8 @@ $very-dark-gray: hsl(0, 0%, 27%);
 body{
     font-family: 'League Spartan', sans-serif;
     min-height: 100vh;
-
+    max-width: 1440px;
+    margin: 0 auto;
 
     .container{
         
@@ -22,7 +23,7 @@ body{
                .left-background{
                     position: relative;
                     overflow: hidden;
-                    width: 800px;
+                    max-width: 840px;
                  
                     .slider{
                         transition: transform 0.3s ease;
@@ -230,6 +231,7 @@ body{
                     }
 
                     .left-background{
+                        max-width: none;
                         
                         .arrow-container-mobile{
                             display: flex;
