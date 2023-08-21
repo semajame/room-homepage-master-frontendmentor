@@ -20,18 +20,31 @@
         <div class="left-background">
           <div class="slider-content">
             <div class="slider">
-              <img src="/images/desktop-image-hero-1.jpg" alt="Desktop-Image">
-              <img src="/images/desktop-image-hero-2.jpg" alt="Desktop-Image">
-              <img src="/images/desktop-image-hero-3.jpg" alt="Desktop-Image">
-          </div>
+              
+              <img src="/images/desktop-image-hero-1.jpg" alt="Desktop-Image" class="img">
+              <img src="/images/desktop-image-hero-2.jpg" alt="Desktop-Image" class="img">
+              <img src="/images/desktop-image-hero-3.jpg" alt="Desktop-Image" class="img">
+            </div>
+
+            <div class="arrow-container-mobile">
+              <img src="/images/icon-angle-left.svg" alt="Arrow Left Icon" class="left-arrow-mobile">
+              <img src="/images/icon-angle-right.svg" alt="Arrow Right Icon" class="right-arrow-mobile">
+            </div>
           </div>
         
         <header>
-          <a href="#">
+
+          <img src="/images/icon-hamburger.svg" alt="Hamburger Icon" class="hamburger">
+
+          
+          <a href="#" class="logo">
             <img src="/images/logo.svg" alt="Logo Icon">
           </a>
+          
 
           <nav>
+            <img src="/images/icon-close.svg" alt="Close Icon" class="close-icon">
+
             <ul>
               <li><a href="#">home</a></li>
               <li><a href="#">shop</a></li>
@@ -46,20 +59,20 @@
         <div class="right-content-container">
           <div class="right-content-content">
             <div class="header-para">
-              
+
             </div>
 
-            <h1 class="header">
+            <h2 class="header">
               Discover innovative ways to decorate 
-            </h1>
+            </h2>
 
-            <h1 class="header">
+            <h2 class="header">
               We are available all across the globe
-            </h1>
+            </h2>
 
-            <h1 class="header">
+            <h2 class="header">
               Manufactured with the best materials 
-            </h1>
+            </h2>
         
             <p class="paragraph">
               We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
@@ -86,9 +99,9 @@
         </div>
 
         <div class="arrow-container">
-          <img src="/images/icon-angle-left.svg" alt="Arrow Left Icon" class="left-arrow">
-          <img src="/images/icon-angle-right.svg" alt="Arrow Right Icon" class="right-arrow">
-      </div>
+          <img src="/images/icon-angle-left.svg" alt="Arrow Left Icon" class="left-arrow-desktop">
+          <img src="/images/icon-angle-right.svg" alt="Arrow Right Icon" class="right-arrow-desktop">
+        </div>
       </section>
       
     </section>
@@ -115,30 +128,7 @@
     </section>
   </main>
 </body>
-
-<script type="module" src="/script.js"></script>
+<script src="/script.js"></script>
 <script src="/slider.js"></script>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-<script type="text/javascript">
-    
-  $('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:0,
-  nav:false,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:5
-      }
-  }
-})
-
-</script>
+<script src="/menu.js"></script>
 </html>

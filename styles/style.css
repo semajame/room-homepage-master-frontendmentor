@@ -19,6 +19,9 @@ body .container .main-content .left-content .left-background .slider {
   transition: transform 0.3s ease;
   display: flex;
 }
+body .container .main-content .left-content .left-background .arrow-container-mobile {
+  display: none;
+}
 body .container .main-content .left-content header {
   padding: 3rem 0 0 3rem;
   position: absolute;
@@ -27,6 +30,12 @@ body .container .main-content .left-content header {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+body .container .main-content .left-content header nav .close-icon {
+  display: none;
+}
+body .container .main-content .left-content header .hamburger {
+  display: none;
 }
 body .container .main-content .left-content header ul {
   display: flex;
@@ -50,6 +59,9 @@ body .container .main-content .right-content {
 body .container .main-content .right-content .right-content-container {
   padding: 4rem 5rem 0 5rem;
 }
+body .container .main-content .right-content .right-content-container .right-content-content {
+  width: 400px;
+}
 body .container .main-content .right-content .right-content-container .right-content-content .header {
   display: none;
 }
@@ -58,7 +70,6 @@ body .container .main-content .right-content .right-content-container .right-con
   line-height: 3rem;
   letter-spacing: -1px;
   font-weight: 600;
-  width: 400px;
   display: block;
 }
 body .container .main-content .right-content .right-content-container .right-content-content .paragraph {
@@ -112,6 +123,7 @@ body .container .bottom-content {
 body .container .bottom-content .first-pic {
   background: url(/images/image-about-dark.jpg) no-repeat center;
   width: 100%;
+  background-size: cover;
 }
 body .container .bottom-content .second-content {
   padding: 4rem 2rem 2rem 2rem;
@@ -126,10 +138,123 @@ body .container .bottom-content .second-content p {
   color: #a1a1a1;
 }
 body .container .bottom-content .third-pic {
-  width: 100%;
+  width: 1800px;
   background: url(/images/image-about-light.jpg) no-repeat center;
+  background-size: cover;
 }
-body .container .bottom-background {
-  height: 1.9rem;
-  background-color: hsl(0, 0%, 0%);
+
+@media screen and (max-width: 1024px) {
+  body .container .main-content .left-content {
+    flex-direction: column;
+  }
+  body .container .main-content .left-content header {
+    padding: 2rem 0 0 2rem;
+  }
+  body .container .main-content .left-content .arrow-container {
+    display: none;
+  }
+  body .container .main-content .left-content .left-background .arrow-container-mobile {
+    display: flex;
+    position: relative;
+    margin-top: -3.5rem;
+    float: right;
+  }
+  body .container .main-content .left-content .left-background .arrow-container-mobile img {
+    background-color: hsl(0, 0%, 0%);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+  }
+  body .container .main-content .left-content .left-background .arrow-container-mobile img:hover {
+    opacity: 70%;
+    transition: 300ms ease;
+  }
+  body .container .main-content .right-content {
+    width: 100%;
+    justify-content: center;
+  }
+  body .container .main-content .right-content .right-content-container {
+    padding: 3rem 2rem 4rem 2rem;
+  }
+  body .container .main-content .right-content .right-content-container .right-content-content {
+    width: 100%;
+  }
+  body .container .main-content .right-content .right-content-container .right-content-content .header.active {
+    font-size: clamp(2.2rem, 8vw, 3rem);
+    line-height: 35px;
+  }
+  body .container .main-content .right-content .right-content-container .right-content-content .paragraph.active {
+    margin: 1rem 0 0 0;
+    line-height: 25px;
+  }
+  body .container .main-content .right-content .right-content-container .shop-link {
+    margin: 2rem 0 0 0;
+  }
+  body .container .main-content .right-content .arrow-container.desktop {
+    display: none;
+  }
+  body .container .bottom-content {
+    flex-direction: column;
+  }
+  body .container .bottom-content .first-pic {
+    background: url(/images/image-about-dark.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+  }
+  body .container .bottom-content .second-content {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+  body .container .bottom-content .second-content h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  body .container .bottom-content .third-pic {
+    height: 300px;
+    background: url(/images/image-about-light.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .container .main-content .left-content header .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  body .container .main-content .left-content header .logo {
+    padding: 0;
+  }
+  body .container .main-content .left-content header nav {
+    display: none;
+  }
+  body .container .main-content .left-content header nav.active {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 0 2rem 2rem;
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.6);
+  }
+  body .container .main-content .left-content header nav.active .close-icon {
+    display: block;
+    cursor: pointer;
+  }
+  body .container .main-content .left-content header nav.active ul {
+    float: right;
+  }
+  body .container .main-content .left-content header nav.active ul li a {
+    color: hsl(0, 0%, 0%);
+    font-size: 0.825rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider img {
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=style.css.map */
