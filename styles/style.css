@@ -183,8 +183,8 @@ body .container .bottom-content .third-pic {
     width: 100%;
   }
   body .container .main-content .right-content .right-content-container .right-content-content .header.active {
-    font-size: clamp(2.2rem, 8vw, 3rem);
-    line-height: 35px;
+    font-size: clamp(1.4rem, 9vw, 3rem);
+    line-height: 40px;
   }
   body .container .main-content .right-content .right-content-container .right-content-content .paragraph.active {
     margin: 1rem 0 0 0;
@@ -260,5 +260,35 @@ body .container .bottom-content .third-pic {
     height: 350px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media screen and (max-width: 374px) {
+  body .container .main-content .left-content header {
+    padding: 2rem 0 1rem 2rem;
+  }
+  body .container .main-content .left-content header .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  body .container .main-content .left-content header .logo {
+    padding: 0;
+  }
+  body .container .main-content .left-content header nav {
+    display: none;
+  }
+  body .container .main-content .left-content header nav.active {
+    padding: 1.5rem 0 1rem 2rem;
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.6);
+  }
+  body .container .main-content .left-content header nav.active .close-icon {
+    display: block;
+    cursor: pointer;
+  }
+  body .container .main-content .left-content header nav.active ul {
+    float: right;
+  }
+  body .container .main-content .left-content header nav.active ul li a {
+    color: hsl(0, 0%, 0%);
+    font-size: 0.525rem;
   }
 }/*# sourceMappingURL=style.css.map */
