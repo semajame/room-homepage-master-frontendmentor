@@ -146,6 +146,9 @@ body .container .bottom-content .third-pic {
   body .container .main-content .left-content {
     flex-direction: column;
   }
+  body .container .main-content .left-content .slider .img {
+    margin: 0 !important;
+  }
   body .container .main-content .left-content header {
     padding: 2rem 0 0 2rem;
   }
@@ -254,7 +257,7 @@ body .container .bottom-content .third-pic {
   }
 }
 @media screen and (max-width: 500px) {
-  .slider img {
+  body .slider img {
     height: 350px;
     -o-object-fit: cover;
        object-fit: cover;

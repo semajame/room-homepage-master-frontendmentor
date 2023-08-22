@@ -211,12 +211,11 @@ body{
                 .left-content{
                     flex-direction: column;
 
-                    // .slider{
-                    //     img{
-                    //         height: 400px;
-                    //         object-fit: cover;
-                    //     }
-                    // }
+                    .slider{
+                        .img{
+                            margin: 0 !important;
+                        }
+                    }
 
                     header{
                         padding: 2rem 0 0 2rem;
@@ -380,12 +379,16 @@ body{
 }
    
 @media screen and (max-width: 500px) {
-    .slider{
-        img{
-            height: 350px;
-            object-fit: cover;
+
+    body{
+        .slider{
+            img{
+                height: 350px;
+                object-fit: cover;
+            }
         }
     }
+    
 }
 
 @media screen and (max-width: 374px) {
